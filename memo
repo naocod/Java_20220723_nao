@@ -34,3 +34,58 @@ abstract
 
 
 다형성 > 
+
+
+//// 
+
+패키지가 다른 경우 값이 같아도 다른 객체이기 때문에 equals로 비교하면 false.
+
+equals > 패키지까지 비교
+hashcode > 값만 비교
+
+
+////
+
+Static
+
+공유하는 영역. 생성과 상관없이 정의하는 시점에서 이미 생성되어있음
+생성하지 않고 메소드를 호출할 수 있음 ex) System.out.println();
+
+////
+
+
+제네릭
+
+- 와일드카드
+<> 생략해서 쓰면 알아서 자료형을 가져옴
+<?> 어떤 자료형이든 상관없이 다 받음
+
+- <? extends String>
+ 문자열을 상속받은 클래스들만 리턴 가능
+
+
+////
+
+프레임워크 - 일하기 위한 틀 제공
+컬렉션 프레임워크 - 데이터를 쉽고 효과적으로 처리할 수 있는 표준화된 방법을 제공하는 클래스의 집합
+	1. List 인터페이스
+	2. Set 인터페이스 > 데이터의 유형성 X
+	3. Map 인터페이스 > 구조가 달라서 Collection을 상속받을 수 없음
+
+	List<E>		순서가 있는 데이터의 집합으로, 데이터의 중복을 허용함.		| Vector, ArrayList, LinkedList, Stack, Queue
+	Set<E>		순서가 없는 데이터의 집합으로, 데이터의 중복을 허용하지 않음.	| HashSet, TreeSet
+	Map<K, V>	키와 값의 한 쌍으로 이루어지는 데이터의 집합으로, 순서가 없음.	| HashMap, TreeMap, Hashtable, Properties
+				이때 키는 중복을 허용하지 않지만, 값은 중복될 수 있음.
+
+* Collection 인터페이스에서 제공하는 주요 메소드
+	boolean add(E e)			해당 컬렉션(collection)에 전달된 요소를 추가함. (선택적 기능)
+	void clear()				해당 컬렉션의 모든 요소를 제거함. (선택적 기능)
+	boolean contains(Object o)	해당 컬렉션이 전달된 객체를 포함하고 있는지를 확인함.
+	boolean equals(Object o)	해당 컬렉션과 전달된 객체가 같은지를 확인함.
+	boolean isEmpty()			해당 컬렉션이 비어있는지를 확인함.
+	Iterator<E> iterator()		해당 컬렉션의 반복자(iterator)를 반환함.
+	boolean remove(Object o)	해당 컬렉션에서 전달된 객체를 제거함. (선택적 기능)
+	int size()					해당 컬렉션의 요소의 총 개수를 반환함.
+	Object[] toArray()			해당 컬렉션의 모든 요소를 Object 타입의 배열로 반환함.
+
+
