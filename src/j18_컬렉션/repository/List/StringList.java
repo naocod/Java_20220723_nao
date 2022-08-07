@@ -1,4 +1,4 @@
-package j18_컬렉션.List;
+package j18_컬렉션.repository.List;
 
 import java.util.ArrayList;
 

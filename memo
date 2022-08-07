@@ -88,4 +88,46 @@ Static
 	int size()					해당 컬렉션의 요소의 총 개수를 반환함.
 	Object[] toArray()			해당 컬렉션의 모든 요소를 Object 타입의 배열로 반환함.
 
+////
+
+iterator > 반복자
+	- 스택구조의 형식
+	- iterator.next() > 스택의 pop과 같이 user의 값을 꺼냄
+	
+List, Set > Collection
+Map<K, V> >> Values가 Collection의 형태로 되어있음
+Collection > Iterable
+iterator > Iterable
+
+////
+
+foreach
+	- 처음 값부터 꺼내서 대입하여 다음이 없을때까지 끝까지 반복하며 대입 (boolean X)
+	
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
